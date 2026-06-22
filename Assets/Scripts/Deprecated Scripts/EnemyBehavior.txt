@@ -1,0 +1,28 @@
+	//public bool playerInSightRange;
+	//public bool playerInMonitorRange;
+	//public bool playerInAttackRange;
+	
+	/// <summary>
+	/// Random coordinates are given to the enemy to walk to via NavMesh
+	/// </summary>
+	/*private void SearchWalkPoint()
+	{
+		float randomX = Random.Range(-walkPointRange, walkPointRange);
+		float randomZ = Random.Range(-walkPointRange, walkPointRange);
+		
+		walkPoint = new Vector3(transform.position.x + randomX, transform.position.y, transform.position.z + randomZ);
+		//Checks if AI is able to walk to chosen coordinates by checking if there is a floor
+		if (Physics.Raycast(walkPoint, -transform.up, collisionDistanceCheck, whatIsEnvironment))
+			walkPointSet = true;
+	}*/
+
+	private void SearchMonitorPoint()
+	{
+		float randomX = Random.Range(-monitorMovement, monitorMovement);
+		float randomZ = Random.Range(-monitorMovement, monitorMovement);
+
+		monitorPoint = new Vector3(transform.position.x + randomX, transform.position.z + randomZ);
+		//Checks if AI is able to walk to chosen coordinates by checking if there is a floor
+		if (Physics.Raycast(walkPoint, -transform.up, collisionDistanceCheck, whatIsEnvironment))
+			monitorPointSet = true;
+	}
