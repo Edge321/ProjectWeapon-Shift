@@ -913,6 +913,7 @@ GameObject:
   - component: {fileID: 7492867991645715714}
   - component: {fileID: 1757848753}
   - component: {fileID: 142938754}
+  - component: {fileID: 3326479252664863250}
   m_Layer: 7
   m_Name: Protagonist
   m_TagString: Player
@@ -1054,6 +1055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpMax: 2
   jumpForce: 3000
+  feetPoints: []
+  groundDistance: 0.5
 --- !u!114 &7492867991645715714
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1103,6 +1106,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &3326479252664863250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7167095760907676974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70b7fe500fa15304181144af0d7bb9ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7369209112303965929
 GameObject:
   m_ObjectHideFlags: 0
